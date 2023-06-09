@@ -12,7 +12,7 @@
         volumes:
          - device_name: /dev/sda1
            volume_size: "{{ vol_size }}"
-           device_type: gp2
+           device_type: "{{vol_type}}"
            delete_on_termination: True
         monitoring: no
         count_tag: env
