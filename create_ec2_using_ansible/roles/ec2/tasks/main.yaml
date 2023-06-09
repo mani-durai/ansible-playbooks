@@ -15,6 +15,7 @@
            device_type: "{{vol_type}}"
            delete_on_termination: True
         monitoring: no
+        assign_public_ip: "{{Public_ip}}"
         count_tag: env
         exact_count: 1
 #        instance_profile_arn: "{{ role_arn }}"
@@ -22,3 +23,6 @@
         vpc_subnet_id: "{{ subnet }}"
     register: ec2 
 
+    - name: Display EC2 Instance IP
+      debug:
+        msg: "EC2 Instance Public IP: {{ ec2.instances[0].public_ip }}"
