@@ -1,0 +1,2 @@
+---
+user_data_path: "/opt/ansible/playbook/env_aws_createion/create_ec2/roles/ec2/files/"

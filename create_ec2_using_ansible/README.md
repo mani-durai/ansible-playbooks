@@ -1,0 +1,1 @@
+ ansible-playbook ec2.yml --extra-vars "key_pair=oregon aws_region=us-west-2 group_id=sg-d9cc2faa instance_type=t2.micro ami=ami-ba602bc2 ins_name=ans_test  env=dev vol_size=30 subnet=subnet-0cb48f7a"
