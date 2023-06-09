@@ -1,0 +1,4 @@
+#!/bin/bash
+useradd  -d /home/ansible -s /bin/bash -p 'jaLrzB(8(' ansible
+cp /etc/sudoers /etc/sudoers.bak && echo "ansible ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak && sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g'  /etc/ssh/sshd_config
