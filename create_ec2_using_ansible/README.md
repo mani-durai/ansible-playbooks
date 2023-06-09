@@ -1,6 +1,6 @@
  execution procedures :
  
- $ ansible-playbook ec2.yml --extra-vars "key_pair=<key_pair> aws_region=<region> group_id=<security_group_id> instance_type=<type> ami=<AMI Id> ins_name=<instance_name>  env=<Enviornemt>  vol_type=<volume_type> vol_size=<volume_size> subnet=<subnet_id>"
+ $ ansible-playbook ec2.yml --extra-vars "key_pair=<key_pair> aws_region=<region> group_id=<security_group_id> instance_type=<type> ami=<AMI Id> ins_name=<instance_name>  env=<Enviornemt>  vol_type=<volume_type> vol_size=<volume_size> subnet=<subnet_id> Public_ip=<true or false>"
 
 
  example:
