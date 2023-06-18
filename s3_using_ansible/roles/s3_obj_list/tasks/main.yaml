@@ -1,0 +1,11 @@
+- name: List contents of S3 bucket
+  aws_s3:
+    bucket: "{{ bucket_name }}"
+    region: "{{ aws_region }}"
+    mode: list
+  register: s3_contents
+
+- name: Print bucket contents
+  debug:
+    var: s3_contents
+

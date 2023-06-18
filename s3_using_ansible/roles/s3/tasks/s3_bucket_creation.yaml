@@ -1,0 +1,7 @@
+---
+- name: Create S3 bucket
+  aws_s3:
+    bucket: "{{your_bucket_name}}"
+    mode: create
+    region: "{{your_aws_region}}"
+

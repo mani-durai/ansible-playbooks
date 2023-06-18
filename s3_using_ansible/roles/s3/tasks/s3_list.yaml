@@ -1,0 +1,7 @@
+# Lists all s3 buckets
+- aws_s3_bucket_info:
+  register: result
+
+- name: List buckets
+  debug:
+    msg: "{{ result['buckets'] }}"

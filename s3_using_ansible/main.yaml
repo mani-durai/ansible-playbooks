@@ -1,0 +1,10 @@
+- name: Create S3 bucket
+  aws_s3:
+    bucket: "{{bucket_name}}"
+    mode: create
+    region: "{{aws_region}}"
+  register: s3_bucket_name
+
+- name: Print bucket name
+  debug:
+    var: s3_bucket_name
